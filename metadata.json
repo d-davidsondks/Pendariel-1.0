@@ -1,0 +1,6 @@
+{
+  "name": "Pendariel",
+  "description": "Pendariel - Autonomous intelligence gathering, streaming processing, targeted search indexing, automated alerting, and secure webmail system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

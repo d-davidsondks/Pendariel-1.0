@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html, body {
+    background-color: #ffffff;
+    color: #0284c7; /* text-sky-600 light blue font color */
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  html.dark, html.dark body {
+    background-color: #090d16;
+    color: #38bdf8;
+  }
+
+  ::selection {
+    background-color: #e0f2fe;
+    color: #0369a1;
+  }
+
+  html.dark ::selection {
+    background-color: #0369a1;
+    color: #f0f9ff;
+  }
+}
+
+/* Comprehensive Dark Mode Overrides for Cyber Tactical Intelligence Operations */
+html.dark {
+  color-scheme: dark;
+
+  .bg-white {
+    background-color: #0f172a !important;
+  }
+
+  .bg-sky-50,
+  .bg-sky-50\/40,
+  .bg-sky-50\/50,
+  .bg-sky-50\/60,
+  .bg-sky-50\/70,
+  .bg-sky-50\/80 {
+    background-color: #1e293b80 !important;
+  }
+
+  .bg-sky-100,
+  .bg-sky-100\/60,
+  .bg-sky-100\/70,
+  .bg-sky-100\/80 {
+    background-color: #0369a130 !important;
+  }
+
+  .border-sky-100,
+  .border-sky-200 {
+    border-color: #1e293b !important;
+  }
+
+  .border-sky-300 {
+    border-color: #0284c7 !important;
+  }
+
+  .text-sky-950,
+  .text-sky-900 {
+    color: #f8fafc !important;
+  }
+
+  .text-sky-800,
+  .text-sky-700 {
+    color: #e2e8f0 !important;
+  }
+
+  .text-sky-600 {
+    color: #38bdf8 !important;
+  }
+
+  .text-sky-500,
+  .text-sky-400 {
+    color: #94a3b8 !important;
+  }
+
+  input, select, textarea {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+    border-color: #334155 !important;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #64748b !important;
+  }
+
+  tr:hover {
+    background-color: #1e293b90 !important;
+  }
+
+  thead {
+    background-color: #0b1120 !important;
+    color: #94a3b8 !important;
+    border-color: #1e293b !important;
+  }
+}
